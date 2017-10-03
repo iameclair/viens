@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Germania+One');
+body{
+  background-color: ghostwhite;
+}
+.navbar-brand{
+  font-family: 'Germania One', cursive;
+  font-size: 38px;
+}
