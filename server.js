@@ -11,6 +11,8 @@ const mongoose = require('mongoose');
 const config = require('./config/database');
 const path = require('path');
 const bodyParser = require('body-parser');
+const logger = require('morgan');
+const cookieparser = require('cookie-parser');
 
 /*==================================================================
     database connection
@@ -30,8 +32,17 @@ app.use(cors({
     origin: 'http://localhost:4200',
     credentials: true
 }));
+app.use(logger('env'));
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
+app.use(cookieparser());
+app.use(require('express-session')({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(express.static(__dirname + '/public/dist/'));
 /*==================================================================
  connect server to angular
