@@ -1,0 +1,20 @@
+
+/*
+*/
+.container{
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.mdl-card{
+  width: 100%;
+}
+.form-container{
+  background-color: yellow;
+  margin: auto;
+  width: 100%;
+}
+.card{
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
