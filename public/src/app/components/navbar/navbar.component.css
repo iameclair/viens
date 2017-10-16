@@ -3,7 +3,7 @@
 .navbar-brand{
   font-family: 'Germania One', cursive;
   font-size: 32px;
-  color: red;
+  color: #f00000;
   margin-left: 10%;
 }
 .bg-custom{
@@ -29,11 +29,11 @@
   font-size: 14px;
 }
 .nav-item > a:hover{
-  color: red;
+  color: #f00000;
   display: block;
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid #f00000;
 }
